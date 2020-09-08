@@ -27,7 +27,15 @@ namespace uzsakymai
         private void button2_Click(object sender, EventArgs e)
         {
             OrderInformation myform = new OrderInformation();
-            myform.numericUpDown1.Value = Convert.ToInt32(dataGridView1.CurrentRow.Cells["ID"].Value.ToString());
+            
+            try
+            {
+                myform.numericUpDown1.Value = Convert.ToInt32(dataGridView1.CurrentRow.Cells["ID"].Value.ToString());
+            }
+            catch (ArgumentOutOfRangeException t)
+            {
+                MessageBox.Show("Exception caught: Number is out of range", t.ToString());
+            }
             myform.numericUpDown1.ReadOnly = true;
             myform.numericUpDown1.Increment = 0;
             myform.numericUpDown2.Maximum = Int32.MaxValue;
