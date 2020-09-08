@@ -34,8 +34,7 @@ namespace uzsakymai
             cmd.Parameters.Add("@quantity", SqlDbType.Int).Value = Convert.ToInt32(numericUpDown2.Value);
             cmd.Parameters.Add("@will_pick_up_himself", SqlDbType.Bit).Value = checkBox1.Checked;
             cmd.ExecuteNonQuery();
-            con.Close();
-           
+            con.Close();           
         }
 
         private void button1_Click(object sender, EventArgs e)

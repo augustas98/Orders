@@ -1,4 +1,5 @@
-﻿using System.Data.SqlClient;
+﻿using System;
+using System.Data.SqlClient;
 using System.Windows.Forms;
 
 namespace uzsakymai
@@ -19,6 +20,7 @@ namespace uzsakymai
             catch (SqlException e)
             {
                 MessageBox.Show("Exception caught: Connection to the database failed", e.ToString());
+                Environment.Exit(1);
             }
         }
 
