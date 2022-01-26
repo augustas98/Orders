@@ -33,12 +33,3 @@ You can update a current record by selecting it and clicking the Update button
 You can delete a record by selecting it and clicking the Delete button  
   
 ![Insert new record window](https://i.imgur.com/CW2c731.png)  
-  
-  
-  
-### Contributing
-If you want to improve any part this application feel free to create a Pull Request or an Issue.
-
-### Contact
-  
-Augustas - augustas.matorka@gmail.com
